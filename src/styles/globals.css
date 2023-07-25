@@ -14,3 +14,33 @@
 body {
   background-color: white;
 }
+
+@layer base {
+  h1 {
+    @apply font-bold xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl;
+  }
+  h2 {
+    @apply font-bold xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl;
+  }
+  h3 {
+    @apply font-bold xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg;
+  }
+  h4 {
+    @apply font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base;
+  }
+  h5 {
+    @apply font-bold xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm;
+  }
+  h6 {
+    @apply font-bold xl:text-xl lg:text-lg md:text-base sm:text-xs text-xs;
+  }
+  .title {
+    @apply xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base;
+  }
+  .body {
+    @apply xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm;
+  }
+  .body2 {
+    @apply xl:text-xl lg:text-lg md:text-base sm:text-xs text-xs;
+  }
+}
