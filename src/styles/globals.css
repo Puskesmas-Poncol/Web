@@ -9,30 +9,65 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: ease-in-out 0.15s;
 }
 
-body {
-  background-color: white;
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 @layer base {
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
+  .btn-secondary {
+    @apply bg-secondary text-white;
+  }
+  .btn-tertiary {
+    @apply bg-tertiary text-white;
+  }
+
+  .btn:hover {
+    @apply bg-opacity-80;
+  }
+
+  .icon {
+    @apply lg:w-7 lg:h-7 md:w-6 md:h-6 sm:w-5 sm:h-5 w-4 h-4;
+  }
+  body {
+    @apply transition-all;
+  }
+  svg {
+    stroke: currentColor;
+  }
+
+  body {
+    @apply bg-slate-100 text-slate-800;
+  }
+
   h1 {
-    @apply font-bold xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl;
+    @apply font-bold xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl;
   }
   h2 {
-    @apply font-bold xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl;
+    @apply font-bold xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl;
   }
   h3 {
-    @apply font-bold xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg;
+    @apply font-bold xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl;
   }
   h4 {
-    @apply font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base;
+    @apply font-bold xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg;
   }
   h5 {
-    @apply font-bold xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm;
+    @apply font-bold xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base;
   }
   h6 {
-    @apply font-bold xl:text-xl lg:text-lg md:text-base sm:text-xs text-xs;
+    @apply font-bold xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm;
   }
   .title {
     @apply xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-base;
@@ -41,6 +76,22 @@ body {
     @apply xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm;
   }
   .body2 {
-    @apply xl:text-xl lg:text-lg md:text-base sm:text-xs text-xs;
+    @apply xl:text-xl lg:text-lg md:text-base sm:text-sm text-xs;
+  }
+  .body3 {
+    @apply xl:text-lg lg:text-base md:text-sm sm:text-xs text-xs;
+  }
+  .body4 {
+    @apply xl:text-base lg:text-sm md:text-xs sm:text-xs text-xs;
+  }
+  .body5 {
+    @apply xl:text-sm lg:text-xs md:text-xs sm:text-xs text-xs;
+  }
+  .body6 {
+    @apply xl:text-xs lg:text-xs md:text-xs sm:text-xs text-xs;
+  }
+
+  button {
+    @apply font-bold uppercase xl:text-base lg:text-sm md:text-xs sm:text-xs text-xs;
   }
 }

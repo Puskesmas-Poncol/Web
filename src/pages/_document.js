@@ -1,3 +1,5 @@
+import Header from "@/components/layouts/header";
+import Sidebar from "@/components/layouts/sidebar";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -5,7 +7,14 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body className="overflow-x-hidden">
-        <Main />
+        {/* <Main /> */}
+        <div className="flex w-screen">
+          <Sidebar />
+          <div className="w-full">
+            <Header />
+            <Main />
+          </div>
+        </div>
         <NextScript />
       </body>
     </Html>

@@ -10,7 +10,7 @@ export default function StyleGuide() {
       <div className="title">TITLE</div>
       <div className="body">Body 1</div>
       <div className="body2">Body 2</div>
-      <div>BUTTON</div>
+      <button>button</button>
     </div>
   );
 }
