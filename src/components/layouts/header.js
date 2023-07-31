@@ -71,7 +71,12 @@ export default function Header() {
         open={isModalOpen}
         onOk={() => setIsModalOpen(false)}
         footer={[
-          <button className="btn btn-primary" form="login-form" type="submit">
+          <button
+            key="login-button"
+            className="btn btn-primary"
+            form="login-form"
+            type="submit"
+          >
             LOGIN
           </button>,
         ]}
