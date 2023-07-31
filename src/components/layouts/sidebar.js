@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import DashboardIcon from "@/components/icons/dashboardIcon";
-import UploadIcon from "@/components/icons/uploadIcon";
+// import DashboardIcon from "@/components/icons/dashboardIcon";
+// import UploadIcon from "@/components/icons/uploadIcon";
 import { useRouter } from "next/router";
 import { getUserToken } from "@/utils/userToken";
 
@@ -34,7 +34,8 @@ export default function Sidebar() {
             setIsDashboard(true);
           }}
         >
-          <DashboardIcon className=" text-slate-300 w-5 h-5" />
+          {/* <DashboardIcon className=" text-slate-300 w-5 h-5" /> */}
+          <img src="/assets/icons/dashboard-active.svg" />
           <div className="w-[1px] h-[20px] bg-slate-400"></div>
           <div className="body4 font-medium">Dashboard</div>
         </div>
@@ -50,7 +51,8 @@ export default function Sidebar() {
             !isDashboard ? "bg-secondary" : ""
           } hover:bg-secondary items-center py-2 px-4 rounded-3xl cursor-pointer text-slate-200  gap-2`}
         >
-          <UploadIcon className=" text-slate-300 w-5 h-5" />
+          {/* <UploadIcon className=" text-slate-300 w-5 h-5" /> */}
+          <img src="/assets/icons/upload-active.svg" />
           <div className="w-[1px] h-[20px] bg-slate-400"></div>
           <div className="body4 font-medium">Upload Data</div>
         </div>
