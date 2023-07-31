@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import DashboardIcon from "../icons/dashboardIcon";
-import UploadIcon from "../icons/uploadIcon";
+import DashboardIcon from "@/components/icons/dashboardIcon";
+import UploadIcon from "@/components/icons/uploadIcon";
 import { useContainerDimensions } from "@/hooks/useContainerDimension";
 import { useRouter } from "next/router";
 import { getUserToken } from "@/utils/userToken";
