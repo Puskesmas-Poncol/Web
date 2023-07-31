@@ -6,15 +6,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="overflow-x-hidden">
-        {/* <Main /> */}
-        <div className="flex w-screen">
-          <Sidebar />
-          <div className="w-full">
-            <Header />
-            <Main />
-          </div>
-        </div>
+      <body className="overflow-x-hidden relative">
+        <Main />
         <NextScript />
       </body>
     </Html>

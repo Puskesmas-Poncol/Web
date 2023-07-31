@@ -9,7 +9,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: ease-in-out 0.15s;
 }
 
 .btn {
@@ -23,6 +22,13 @@
 }
 
 @layer base {
+  button > a {
+    @apply no-underline text-slate-200;
+  }
+
+  button {
+    @apply border-0;
+  }
   .btn-primary {
     @apply bg-primary text-white;
   }
@@ -42,9 +48,6 @@
   }
   body {
     @apply transition-all;
-  }
-  svg {
-    stroke: currentColor;
   }
 
   body {
