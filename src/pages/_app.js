@@ -3,8 +3,8 @@ import Sidebar from "@/components/layouts/sidebar";
 import "@/styles/globals.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "dayjs";
 import PageContext from "@/hooks/pageContext";
+// import "dayjs";
 
 export default function App({ Component, pageProps }) {
   return (
