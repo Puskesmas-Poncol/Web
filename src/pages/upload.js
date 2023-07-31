@@ -42,7 +42,7 @@ export default function UploadPage() {
     if (!getUserToken()) {
       router.replace("/");
     }
-  }, []);
+  }, [router]);
 
   return (
     <div className="py-10 px-8">

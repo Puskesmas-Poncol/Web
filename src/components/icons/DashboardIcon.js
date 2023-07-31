@@ -1,4 +1,4 @@
-export default function DashboardIcon({ className }) {
+function DashboardIcon({ className }) {
   return (
     <svg
       width="24"
@@ -22,3 +22,5 @@ export default function DashboardIcon({ className }) {
     </svg>
   );
 }
+
+export default DashboardIcon;

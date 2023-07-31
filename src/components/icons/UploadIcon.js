@@ -1,4 +1,4 @@
-export default function UploadIcon({ className }) {
+function UploadIcon({ className }) {
   return (
     <svg
       width="24"
@@ -24,3 +24,5 @@ export default function UploadIcon({ className }) {
     </svg>
   );
 }
+
+export default UploadIcon;

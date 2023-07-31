@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Sidebar from "@/components/layouts/sidebar";
 import {
   Bar,
@@ -16,8 +14,6 @@ import Stunting from "../data/stunting.json";
 import axios from "axios";
 import { BASE_URL } from "@/hooks/pageContext";
 import { DatePicker } from "antd";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [date, setDate] = useState(null);
